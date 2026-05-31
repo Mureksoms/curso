@@ -3,67 +3,258 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Site de Cursos</title>
-</head>
-<body>
-  <h1>Meu primeiro site</h1>
-  <p>Estou criando meu site de cursos.</p>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal do Aluno | Fitness</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <aside class="sidebar">
-    <h2>Portal Fitness</h2>
-    <nav>
-      <a href="#">Dashboard</a>
-      <a href="#">Cursos</a>
-      <a href="#">Biblioteca</a>
-      <a href="#">Treinos</a>
-      <a href="#">Progresso</a>
-      <a href="#">Perfil</a>
-    </nav>
-  </aside>
-
-  <main class="content">
-    <header class="topbar">
-      <h1>Bem-vindo ao Portal do Aluno</h1>
-      <p>Seu ambiente de cursos, treinos e evolução.</p>
-    </header>
-
-    <section class="cards">
-      <div class="card">
-        <h3>Progresso geral</h3>
-        <p>68% concluído</p>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <span class="brand-badge">PF</span>
+        <div>
+          <strong>Portal Fitness</strong>
+          <p>Área do aluno</p>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>Treino do dia</h3>
-        <p>Peito, ombro e tríceps</p>
-      </div>
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-link active">Dashboard</a>
+        <a href="#">Cursos</a>
+        <a href="#">Biblioteca</a>
+        <a href="#">Treinos</a>
+        <a href="#">Progresso</a>
+        <a href="#">Perfil</a>
+      </nav>
 
-      <div class="card">
-        <h3>Próximo módulo</h3>
-        <p>Hipertrofia avançada</p>
+      <div class="sidebar-footer">
+        <p>Plano Premium</p>
+        <strong>Aluno ativo</strong>
       </div>
-    </section>
+    </aside>
 
-    <section class="section">
-      <h2>Seus cursos</h2>
-      <ul>
-        <li>Hipertrofia</li>
-        <li>Emagrecimento</li>
-        <li>Mobilidade</li>
-        <li>Nutrição</li>
-      </ul>
-    </section>
-  </main>
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Portal do aluno</p>
+          <h1>Bem-vindo ao seu ambiente fitness</h1>
+          <p class="topbar-text">
+            Acompanhe suas aulas, treinos, materiais e evolução em um só lugar.
+          </p>
+        </div>
+
+        <div class="topbar-user">
+          <div class="user-avatar">JR</div>
+          <div>
+            <strong>Juan Reis</strong>
+            <p>Foco em hipertrofia</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Seu próximo nível começa hoje</p>
+          <h2>Organize treino, estudo e evolução com uma plataforma premium.</h2>
+          <p>
+            Tenha acesso rápido aos seus cursos, materiais, fichas de treino,
+            progresso corporal e conteúdos liberados da semana.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#" class="btn btn-primary">Continuar aula</a>
+            <a href="#" class="btn btn-secondary">Ver treinos</a>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="hero-panel-card">
+            <span>Progresso geral</span>
+            <strong>68%</strong>
+            <small>12 de 18 módulos concluídos</small>
+          </div>
+          <div class="hero-panel-card">
+            <span>Treino de hoje</span>
+            <strong>Peito + Ombro</strong>
+            <small>60 min de sessão planejada</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-grid">
+        <article class="stat-card">
+          <p>Última aula</p>
+          <h3>Hipertrofia Avançada</h3>
+          <span>Módulo 03 • Aula 07</span>
+        </article>
+
+        <article class="stat-card">
+          <p>Próximo conteúdo</p>
+          <h3>Estratégias de progressão</h3>
+          <span>Liberado amanhã às 08:00</span>
+        </article>
+
+        <article class="stat-card">
+          <p>Materiais recentes</p>
+          <h3>Guia de execução</h3>
+          <span>PDF + checklist de treino</span>
+        </article>
+
+        <article class="stat-card highlight">
+          <p>Treino do dia</p>
+          <h3>Upper A</h3>
+          <span>8 exercícios • descanso controlado</span>
+        </article>
+      </section>
+
+      <section class="content-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Cursos</p>
+            <h2>Seus programas</h2>
+          </div>
+          <a href="#" class="section-link">Ver todos</a>
+        </div>
+
+        <div class="courses-grid">
+          <article class="course-card">
+            <span class="tag">Mais acessado</span>
+            <h3>Hipertrofia</h3>
+            <p>Treinamento focado em ganho de massa muscular com progressão estruturada.</p>
+          </article>
+
+          <article class="course-card">
+            <span class="tag">Atualizado</span>
+            <h3>Emagrecimento</h3>
+            <p>Estratégias práticas de treino, cardio e rotina para definição corporal.</p>
+          </article>
+
+          <article class="course-card">
+            <span class="tag">Mobilidade</span>
+            <h3>Mobilidade</h3>
+            <p>Protocolos para melhorar amplitude, postura e eficiência nos movimentos.</p>
+          </article>
+
+          <article class="course-card">
+            <span class="tag">Nutrição</span>
+            <h3>Nutrição</h3>
+            <p>Base alimentar, organização de dieta, materiais de apoio e guias rápidos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel-card">
+          <div class="section-heading small">
+            <div>
+              <p class="eyebrow">Biblioteca</p>
+              <h2>Materiais em destaque</h2>
+            </div>
+          </div>
+
+          <ul class="list">
+            <li>
+              <strong>Ebook de periodização</strong>
+              <span>PDF completo com estratégias de evolução</span>
+            </li>
+            <li>
+              <strong>Ficha de treino ABC</strong>
+              <span>Divisão semanal com observações práticas</span>
+            </li>
+            <li>
+              <strong>Guia de receitas fitness</strong>
+              <span>Opções para rotina de ganho e definição</span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="panel-card">
+          <div class="section-heading small">
+            <div>
+              <p class="eyebrow">Treinos</p>
+              <h2>Sessão de hoje</h2>
+            </div>
+          </div>
+
+          <ul class="list">
+            <li>
+              <strong>Supino reto</strong>
+              <span>4 séries • 8 a 10 reps</span>
+            </li>
+            <li>
+              <strong>Desenvolvimento</strong>
+              <span>4 séries • 10 reps</span>
+            </li>
+            <li>
+              <strong>Tríceps corda</strong>
+              <span>3 séries • 12 reps</span>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel-card">
+          <div class="section-heading small">
+            <div>
+              <p class="eyebrow">Progresso</p>
+              <h2>Sua evolução</h2>
+            </div>
+          </div>
+
+          <div class="progress-list">
+            <div class="progress-item">
+              <div class="progress-label">
+                <span>Aulas concluídas</span>
+                <strong>68%</strong>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 68%;"></div>
+              </div>
+            </div>
+
+            <div class="progress-item">
+              <div class="progress-label">
+                <span>Meta do mês</span>
+                <strong>82%</strong>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 82%;"></div>
+              </div>
+            </div>
+
+            <div class="progress-item">
+              <div class="progress-label">
+                <span>Consistência nos treinos</span>
+                <strong>91%</strong>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 91%;"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel-card">
+          <div class="section-heading small">
+            <div>
+              <p class="eyebrow">Perfil</p>
+              <h2>Resumo da conta</h2>
+            </div>
+          </div>
+
+          <ul class="profile-summary">
+            <li><span>Plano atual</span><strong>Premium Anual</strong></li>
+            <li><span>Objetivo</span><strong>Hipertrofia</strong></li>
+            <li><span>Próxima avaliação</span><strong>07 dias</strong></li>
+            <li><span>Status</span><strong>Ativo</strong></li>
+          </ul>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <p>Portal Fitness © 2026 • Plataforma de cursos, treinos e evolução do aluno.</p>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
