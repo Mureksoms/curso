@@ -517,3 +517,12 @@ a {
     width: 100%;
   }
 }
+.biblioteca-link {
+  display: block;
+  cursor: pointer;
+}
+
+.biblioteca-link:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
