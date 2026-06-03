@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biblioteca</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biblioteca | Portal Fitness</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Material de apoio</h1>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <div class="sidebar-brand">
+          <div class="brand-badge">PF</div>
+          <div>
+            <strong>Portal Fitness</strong>
+            <p>Área do aluno</p>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a href="index.html">Dashboard</a>
+          <a href="cursos.html">Cursos</a>
+          <a href="biblioteca.html" class="active">Biblioteca</a>
+          <a href="treinos.html">Treinos</a>
+          <a href="progresso.html">Progresso</a>
+          <a href="perfil.html">Perfil</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-footer">
+        <p>Plano Premium</p>
+        <strong>Aluno ativo</strong>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Biblioteca</p>
+          <h1>Material de apoio</h1>
+          <p class="topbar-text">
+            Escolha um dos materiais abaixo para acessar a página específica.
+          </p>
+        </div>
+      </header>
+
+      <section class="content-section">
+        <div class="section-heading">
+          <h2>Conteúdos</h2>
+        </div>
+
+        <div class="courses-grid">
+          <a href="independencia-academia.html" class="course-card biblioteca-link">
+            <span class="tag">Novo material</span>
+            <h3>Independencia na academia</h3>
+            <p>
+              Clique para abrir a página deste conteúdo.
+            </p>
+          </a>
+
+          <a href="tier-list-exercicios.html" class="course-card biblioteca-link">
+            <span class="tag">Novo material</span>
+            <h3>Tier list exercícios</h3>
+            <p>
+              Clique para abrir a página deste conteúdo.
+            </p>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
