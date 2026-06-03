@@ -19,6 +19,12 @@
   --radius-lg: 24px;
 }
 
+html,
+body {
+  min-height: 100%;
+  background: #0b1020;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -27,6 +33,7 @@ body {
     radial-gradient(circle at top left, rgba(124, 58, 237, 0.22), transparent 35%),
     radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.18), transparent 35%),
     linear-gradient(135deg, #0b1020 0%, #11182d 50%, #0f172a 100%);
+  background-attachment: fixed;
 }
 
 a {
@@ -37,6 +44,7 @@ a {
 .app-shell {
   display: flex;
   min-height: 100vh;
+  background: transparent;
 }
 
 .sidebar {
@@ -120,6 +128,7 @@ a {
 .main-content {
   flex: 1;
   padding: 36px;
+  background: transparent;
 }
 
 .topbar {
@@ -128,6 +137,7 @@ a {
   align-items: flex-start;
   gap: 24px;
   margin-bottom: 32px;
+  background: transparent;
 }
 
 .eyebrow {
@@ -143,6 +153,7 @@ a {
   font-size: 36px;
   line-height: 1.1;
   margin-bottom: 10px;
+  color: var(--text-primary);
 }
 
 .topbar-text {
@@ -282,6 +293,13 @@ a {
 
 .stats-grid,
 .courses-grid,
+.dashboard-grid,
+.content-section {
+  background: transparent;
+}
+
+.stats-grid,
+.courses-grid,
 .dashboard-grid {
   display: grid;
   gap: 20px;
@@ -314,6 +332,7 @@ a {
 .course-card h3,
 .panel-card h2 {
   margin: 8px 0;
+  color: var(--text-primary);
 }
 
 .stat-card span {
@@ -343,6 +362,7 @@ a {
   align-items: center;
   gap: 16px;
   margin-bottom: 18px;
+  background: transparent;
 }
 
 .section-heading.small {
@@ -351,6 +371,7 @@ a {
 
 .section-heading h2 {
   font-size: 24px;
+  color: var(--text-primary);
 }
 
 .section-link {
@@ -408,6 +429,7 @@ a {
 .profile-summary strong {
   display: block;
   margin-bottom: 6px;
+  color: var(--text-primary);
 }
 
 .progress-list {
@@ -461,6 +483,7 @@ a {
 
 .footer {
   padding: 8px 0 24px;
+  background: transparent;
 }
 
 .footer p {
